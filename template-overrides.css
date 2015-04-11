@@ -1,0 +1,48 @@
+#grid .item a{
+  .wrapper {
+    background-color: rgba(0,0,0,0);
+    opacity:1;
+    .project-title h2,h3 {
+      display:none;
+    }
+  }
+}
+#grid .item:first-child a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url("http://static1.squarespace.com/static/54f35606e4b0ffc38756eceb/t/55289ba0e4b04239f6068328/1428724640509/active+THUMBNAILLNIGHT.jpg");
+  background-size: cover;
+  transition: transform .2s ease-out;
+}
+#grid .item:first-child a:hover:before {
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background-image: url("http://static1.squarespace.com/static/54f35606e4b0ffc38756eceb/t/55289ba0e4b04239f6068328/1428724640509/active+THUMBNAILLNIGHT.jpg");
+  background-size: cover;
+  transform: scale(1.1);
+}
+ #grid .item a:hover {
+  .wrapper{
+    background-color: rgba(0,0,0,0);
+  }
+}
+body.project-hover-zoom .loaded #grid .item.hovering img {
+  transform: scale(1.1);
+  top: 0px !important;
+}
+.project-item:first-child .intrinsic div:hover:before {
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("http://static1.squarespace.com/static/54f35606e4b0ffc38756eceb/t/5528a2cde4b075a93c6dc446/1428726477923/New+girls+NIGHT+.jpg");
+  background-size: cover;
+}
